@@ -32,7 +32,7 @@ multiply macro p1,p2
     mov bl,al        ;storing values in bx for high and low bytes
     mov bh,ah
   
-    mov dl,'='       ;equal to "=" sign
+    mov dl,'='       ;printing = sign
     mov ah,2
     int 21h
     
@@ -73,7 +73,7 @@ main proc
     
     mov ah,1              ;taking table input
     int 21h
-    sub al,48             
+    sub al,48
     mov num,al
     
     call newline
